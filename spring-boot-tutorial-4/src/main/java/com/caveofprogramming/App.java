@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
  
 
-@Controller
+
 @SpringBootApplication
 public class App extends SpringBootServletInitializer {
 
@@ -16,19 +16,12 @@ public class App extends SpringBootServletInitializer {
 		    SpringApplication.run(App.class, args);
 		  }
 	  
+	  
 		@Override
 		protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 			return application.sources(App.class);
 	    }
 
-		  @RequestMapping("/")
-		  String index() {
-		    return "index";
-		  }
-		  
-		  @RequestMapping("/admin")
-		  String admin() {
-		    return "admin";
-		  }
+
 
 }
