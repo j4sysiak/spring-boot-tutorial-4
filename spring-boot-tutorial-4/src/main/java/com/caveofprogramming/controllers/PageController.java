@@ -21,4 +21,8 @@ public class PageController {
 	    return "info";
 	  }
     
+	  @RequestMapping("/hello")
+	  String hello() {
+	    return "hello";
+	  }
 }
